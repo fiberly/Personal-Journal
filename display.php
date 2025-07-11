@@ -29,7 +29,7 @@ while($row = $result->fetch_assoc()) {
     echo "<a href='delete.php?id=" . $row["id"] . "' onclick=\"return confirm('Are you sure you want to delete this task?');\">Delete</a></li>";
     }
 } else { 
-    echo "<li>No text(s) found</li>";
+    echo "<br>";
     }
 } else {
     echo "Error fetching results: " . $conn->error;

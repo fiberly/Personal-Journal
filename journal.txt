@@ -1,0 +1,7 @@
+add better error handling
+
+better refresh mechanism
+
+better resizing on smaller screens
+
+deletion for photos from the database

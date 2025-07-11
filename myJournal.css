@@ -22,39 +22,22 @@
     .pictureBox { width: 275px; height: 200px; padding: 7px; }
     .portraitBox { width: 170px; height: 200px; padding: 7px; }
      
-    #Sep20 { display: none; }
-    #Aug20 { display: none; }
-    #Jul20 { display: none; }
-    #Jun20 { display: none; }
-    #May20 { display: none; }
-    #Apr20 { display: none; }
-    #Mar20 { display: none; }
-    #Oct20 { display: none; }
-    #Nov20 { display: none; }
-    #Dec20 { display: none; }
-    #year2020 { display: none;  }
 
     button { height: 40px; width: 100px; background-color: burlywood; border: none; }
     button:hover { background-color: #555; color: white; }
     .boxHome { font-size: large; border: 2px transparent aliceblue;  border-radius: 20px; background-color: aliceblue; padding: 0.5em; padding-right: 15px; opacity: 0.9;  backdrop-filter: blur(3px); box-shadow: 1px 1px 30px; margin: 75px; }
 
-    .save { }
+    
     .word { border: 1px solid paleturquoise;  border-radius: 5px; background-color: #C8A2C8; width: fit-content; padding-left: 8px; padding-bottom: 8px; padding-top: 8px; padding-right: 8px; opacity: 0.8; backdrop-filter: blur(4px); box-shadow: 1px 1px 30px;}
-    .saveButtonForText { }
+    
 
     .boxYear { padding: 30px; color: black; background-color: antiquewhite; margin-left: 75px; }
     .boxYear:hover { background-color: gainsboro; color: black; }
-    .boxMonth { color: rgb(197,196,196); background-color: rgb(72,70,55); margin-left: 75px; }
+    .hideAndShowJournal { color: rgb(197,196,196); background-color: rgb(72,70,55); margin-left: 75px; height: 50px; width: 200px; }
     .boxMonth:hover { background-color: rgb(104,105,111); color: rgb(197,196,196); }
 
-    #Jan21 { display: none; }
-    #Feb21 { display: none; }
-    #Mar21 { display: none; }
-    #Apr21 { display: none; }
-    #May21 { display: none; }
-    #Jun21 { display: none; }
-    #Jul21 { display: none; }
-    #Aug21 { display: none; }
+    
+    #HIDEJOURNALENTRIES { display: none; }
 
     @media only screen and (max-width: 64em) {
         body { background-color: lightskyblue; }

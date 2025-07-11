@@ -43,7 +43,7 @@
         
         
             <form action="submit.php" method="POST">
-            <textarea name="taskInput" rows="2" cols="28" placeholder="Enter a new task..."></textarea><br>
+            <textarea name="taskInput" rows="2" cols="37" placeholder="Enter a new task..."></textarea><br>
             <br>
             <input type="submit" value="Submit" id="saveButton">
            <!-- <button class="saveButtonForText" id="saveButton">Add Task</button>
@@ -98,17 +98,31 @@
             </form>
 -->
 
-<form action="textSubmit.php" method="POST">
+<form action="textSubmit.php" method="POST" enctype="multipart/form-data">
 <input type="text" name="titleInput" placeholder="Title" required><br>
 <textarea name=journalEntry type = "text" rows = "7" cols = "30" placeholder = "Journal entry here..."></textarea>
+<br>
+<input type="file" name="image" accept="image/*">
 <input type="submit" value="Submit" id="saveButton">
-<!--<p class = "word">placeholder</p>-->
-<!-- <button class = "saveButtonForText">Save to local storage</button> -->
+<br>
+
 </form>
-    
+
+<br>
+<button class = "hideAndShowJournal" onclick = "HideShowButton()">Show/Hide Journal Entries</button>
+
+<!-- display error message -->
+
+<?php if (!empty($error_message)): ?>
+    <div style="color: red;">
+        <?php echo htmlspecialchars($error_message); ?>
+    </div>
+<?php endif; ?>
+
 
 </div>
 
+
 <br>
 <br>
 <br>
@@ -117,9 +131,8 @@
 <br>
 
 
-<!-- <button class = "boxMonth" onclick = "HideShowButtonAug21()">August 2021</button> -->
 
-<!-- <div id = "Aug21"> -->
+<div id = "HIDEJOURNALENTRIES">
 
 
     <div class="box"><h1>Journal Entries: </h1></div>
@@ -133,6 +146,9 @@
             
         </div>
 
+            
+
+
 
 
    
@@ -141,7 +157,7 @@
 <br>
 </div>
 
-<!--</div>-->
+</div>
 
 
 

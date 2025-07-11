@@ -20,7 +20,7 @@ if ($conn->connect_error) {
 if (isset($_GET['id'])) {
     $id = intval($_GET['id']); // Prevent SQL injection
 
-    // Delete task
+    // Delete journal text
     $sql = "DELETE FROM journals WHERE id = $id";
     if ($conn->query($sql) === TRUE) {
         header("Location: Journal.php"); // Redirect after successful deletion
